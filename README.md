@@ -7,5 +7,4 @@ Ce projet consiste à créer une app web de tableau de bord pour voiture (comme 
 / not defined \
 
 ## Versions
-* 0.2.7: - {radio} ajax pour le changement de station
-         - {téléphone} ajax pour taper et afficher le numéro de téléphone
+* 0.2.7: - {radio} ajax pour le changement de station  - {téléphone} ajax pour taper et afficher le numéro de téléphone
