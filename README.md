@@ -11,7 +11,7 @@ Ce projet consiste à créer une app web de tableau de bord pour voiture (comme 
 
 ## Mise en production
 - Raspberry PI 4 (4Go RAM)
-    *
-    *
-    *
+    * de
+    * de d
+    * dde
 -
