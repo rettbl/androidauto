@@ -1,2 +1,2 @@
 # Android Auto
-App d'ordinateur de bord pour google car
+Hardware et software pour ordinateur de bord pour google car
