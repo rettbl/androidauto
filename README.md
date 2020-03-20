@@ -4,14 +4,30 @@ Hardware et software pour ordinateur de bord pour google car
 Ce projet consiste à créer une app web de tableau de bord pour voiture (comme medianav), intègré sur un raspberry Pi qui est lui même connécté à la voiture. Avec des fonctionnalités Bluetooth, Google Assistant, maps, lecture de fichier audio ...
 
 ## Objectifs à faire
-/ not defined \
+- [ ] Se documenter sur les api JS bluetooh (merci Mathis pour les docs :=) )
+   - [ ] Récupération niveau batterie + affichage du niveau
+   - [ ] Récupération du niveau du signal GSM + affichage du niveau
+- [ ] Se renseigner sur les web view (aletrnative à chronium ??)
+- [ ] "MAIN": Faire Message.
+- [ ] "MAIN": Faire Paramètres.
+- [ ] "MAIN": Faire l'affichage des notifs.
+- [ ] "MAIN": Faire l'intégration du RPI sur une voiture.
 
 ## Versions
 * 0.2.7: - {radio} ajax pour le changement de station. - {téléphone} ajax pour taper et afficher le numéro de téléphone.
 
+
 ## Mise en production
+Matériel et configuration pour la réalisation du projet.
 - Raspberry PI 4 (4Go RAM)
-    * de
-    * de d
-    * dde
--
+    * Appache
+    * php7.3
+    * mysql
+    * phpmyadmin
+    * chronium
+    * filezilla
+- 
+
+
+
+By Benjamin Fourmaux Beruet. Toute reproduction non autorisée pour des fins comercials est interdite
