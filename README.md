@@ -7,4 +7,4 @@ Ce projet consiste à créer une app web de tableau de bord pour voiture (comme 
 / not defined \
 
 ## Versions
-*0.2.6: 
+* 0.2.6: 
