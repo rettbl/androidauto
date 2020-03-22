@@ -13,7 +13,8 @@ Ce projet consiste à créer une app web de tableau de bord pour voiture (comme 
 - [ ] "MAIN": Faire l'affichage des notifs.
 - [ ] "MAIN": Faire l'intégration du RPI sur une voiture.
 
-## Versions
+## Versions   (actuelle stable : 0.2.7)
+- [futur] __1.0.0:__ "Alonsy" Le hardware et le software sont prêt à être intégré dans une voiture.
 - [futur] __0.3.0:__ "Blue" ajout des api bluetooth sur l'app.
 - [futur] __0.2.8:__ 
     * {confort} Création de la page confort.php pour tout ce qui est chauffage abitacle, niveau batterie véhicule et jsp quoi d'autre.
@@ -31,7 +32,7 @@ Matériel et configuration pour la réalisation du projet.
     * phpmyadmin
     * chronium
     * filezilla
-- 
+- Écran tactile " pour RPI
 
 
 
