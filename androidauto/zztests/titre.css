@@ -1,0 +1,73 @@
+@font-face {
+	font-family: "Font Google Color";
+	src: url('font/Font Google Color.ttf');
+}
+
+body {
+  text-align:center;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-weight:300;
+  font-size:32px;
+  padding-top:40vh;
+  height:100vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 10s infinite; /* temps de cycle du android */
+}
+
+div:last-of-type { /*temps de cycle du petit morceu */
+  width:0px;
+  animation: reveal 10s infinite;
+}
+
+div:last-of-type span { /* temps de l' apparition petit morceu */
+  margin-left:-355px;
+  animation: slidein 10s infinite; 
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+p {
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+
+
+
+

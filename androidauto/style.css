@@ -1,0 +1,536 @@
+#root-color {
+	/*Radio*/color: red, #ff0000; /*rouge*/
+	/*Media*/color: #a200ff; /*violet*/
+	/*Phone*/color: cyan, #00ffff; /*cyan*/
+	/*Message*/color: blue, #0000ff; /*bleu*/
+	/*Nav*/color: #00b200; /*vert*/
+	/*Settings*/color:yellow, #ffff00; /*jaune*/
+}
+
+/* Barre de scroll */
+
+	/* Désactiver le scroll */
+.container-fluid {
+	overflow:hidden;
+}
+
+	/* Pour cacher la scroll bar sans empecher le scroll */
+/* .container-fluid::-webkit-scrollbar { */
+  /* display: none; */
+/* } */
+
+/* Boutton rond */
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+
+
+@font-face {
+	font-family: "Font Google Color";
+	src: url('font/Font Google Color.ttf');
+}
+/* affichage des div en fonction de l'orientation de l'écran (paysage ou portrait) */
+@media (orientation: portrait) { /* portrait*/
+	.indication {
+		display: block;
+	}
+	.corpsIndex{
+		display: none;
+	}
+}
+
+@media (orientation: landscape) { /* paysage */
+	.indication {
+		display: none;
+	}
+	.corpsIndex {
+		display: block;
+	}
+}
+
+/* affichage de l'animation téléphone*/
+.rotation {
+    margin:auto;
+    -webkit-animation:spin 4s infinite;
+    -moz-animation:spin 4s infinite;
+    animation:spin 4s infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(90deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(90deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(90deg); transform:rotate(90deg); } }
+.indication {
+	background-color: white;
+	color: black;
+}
+
+body {
+	background-color: black;
+	color: white; 
+}
+footer {
+	position: absolute; 
+	bottom: 0;
+}
+
+/* index.php */
+.corpsIndex {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+.corpsIndex #auto {
+	animation: fadein 6s;
+    -moz-animation: fadein 6s; /* Firefox */
+    -webkit-animation: fadein 6s; /* Safari et Chrome */
+    -o-animation: fadein 6s; /* Opera */
+}
+.titreIndex {
+	padding-top: 3.5%;
+	font-size: 40px;
+	font-family: 'Font Google Color';
+	white-space: nowrap;
+}
+#videoIndex {
+	margin: 10%;
+}
+
+/* Transition titre index */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+	/* header barre */
+.header {
+	border-bottom: 2px solid grey;
+	width: 100%;
+	height: 50%;
+	z-index: 5;
+	text-align: right;
+}
+.header .row {
+	margin-left: 55%;
+}
+.header .row #statutTel {
+	margin-right: 5%
+}
+.header .row #statutTel #reseau img {
+	height: 45px;
+	width: 70px;
+	padding-right: 2%;
+}
+.header .row #statutTel #batterie img {
+	height: 60px;
+	width: 85px;
+}
+.header .row #weather {
+	
+}
+.header #time {
+	margin-left: -40%;
+	font-size: 40px;
+	/*padding-right: 15px;*/
+}
+
+header .darkmodebox {
+	width: 5%;
+	margin-left: 2.5%;
+	border: 2px solid grey;
+	border-radius: 5px;
+	position: absolute;
+	top: 2.5%;
+	z-index: 6;
+}
+
+/* home.php */
+@keyframes opacity {
+0%   { opacity: 0%; }
+100% { opacity: 100%; }
+}
+
+.carousel-indicators {
+	margin-bottom: 9%; /* 140px */
+}
+#menuHome{
+	margin: 9.5%;
+	padding: 2%;
+	/*border: 3px solid green;*/
+	border-radius: 10px;
+}
+#menuHome .col {
+	width: 150px;
+}
+#googlecarmaquette {
+	margin: 9.5%;
+	padding: 0.77%;
+	/*border: 3px solid green;*/
+	border-radius: 10px;
+}
+#googlecarmaquette img {
+	width: 40%;
+	animation: opacity 2.0s ease-in-out;
+}
+ 
+.row #menuRadio,#menuMedia, #menuPhone, #menuMessage, #menuNav, #menuSettings {
+	border: 2px solid grey;
+	border-radius: 10px;
+	margin: 7px;
+	z-index: 2;
+	text-align: center;
+	
+	animation: opacity 2.0s ease-in-out;
+}
+.row #menuRadio,#menuMedia, #menuPhone, #menuMessage, #menuNav, #menuSettings, img {
+	width: 100px;
+	padding-top: 5px;
+}
+.row #menuRadio {
+	background: linear-gradient(black, 90%, red);
+	border-color: red;
+}
+.row #menuMedia {
+	background: linear-gradient(black, 90%, #a200ff);
+	border-color: #a200ff;
+}
+.row #menuPhone {
+	background: linear-gradient(black, 90%, cyan);
+	border-color: cyan;
+}
+.row #menuMessage {
+	background: linear-gradient(black, 90%, blue);
+	border-color: blue;
+}
+.row #menuNav {
+	background: linear-gradient(black, 90%, #00b200);
+	border-color: #00b200;
+}
+.row #menuSettings {
+	background: linear-gradient(black, 90%, yellow);
+	border-color: yellow;
+}
+	/* boutton de recherche vocal Google */
+.microGoogleAssi {
+	margin-top: -4%;
+}
+.microGoogleAssi button:hover{
+	background-color : lightgrey;
+	/* border-color: blue ; */
+}
+.microGoogleAssi button img {
+	width: 29px;
+}
+
+
+/* confort.php */
+.confortOverlay .footerConfort {
+	width: 101%;
+	height: 8.2%;
+	position: absolute; 
+	bottom: 0;
+}
+.confortOverlay .footerConfort .row {
+	width: 100%;
+	height: 10%;
+}
+
+
+/* radio.php */
+.radioOverlay {
+	padding:0%;
+	height:100%;
+}
+.radioOverlay .header {
+	border-bottom: 2px solid red;
+}
+.radioOverlay  header .darkmodebox {
+	border-color: red;
+}
+.radioOverlay .footerRadio {
+	width: 101%;
+	height: 8.2%;
+	position: absolute; 
+	bottom: 0;
+}
+.radioOverlay .footerRadio .row {
+	width: 100%;
+	height: 10%;
+}
+.radioOverlay .footerRadio .row h1 {
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 3.5%;
+	font-size: 35px;
+}
+	/* radio-frequences.php */
+	.body-radio-frequences {
+		/*background: linear-gradient(black, 90%, red);*/
+		width: 100%;
+		margin: 0px;
+		height: 100%;
+	}
+	.body-radio-frequences #station-name {
+		margin-top: 10%;
+	}
+	.body-radio-frequences #bandeau-control {
+		margin-top: 3%;
+	}
+	.body-radio-frequences #bandeau-control .row {
+		margin-right:0px;
+		margin-left:0px;
+		padding-bottom:0px ;
+	}
+	.body-radio-frequences #bandeau-control .col, .col-sm {
+		height: 100px;
+		vertical-align: middle;
+		text-align: center;
+	}
+	.body-radio-frequences #bandeau-control .col-sm {
+		margin-top: 25px;
+	}
+	.body-radio-frequences #bandeau-control .col {
+		border: 2px solid red;
+		background-color: black;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.body-radio-frequences #bandeau-control .col button {
+		background: linear-gradient(black, 90%, red);
+		border: none;
+		width: 100%;
+		height: 100%;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 50px;
+		
+	}
+	.body-radio-frequences #bandeau-control .col button:active {
+		background: red;	
+	}
+	
+	/* Radio-liste.php */
+	#page {
+		margin: 9.5%;
+		padding: 0.77%;
+		/*border: 3px solid green;*/
+		border-radius: 10px;
+	}
+	.body-radio-liste .carousel-indicators .active { /* Changer la couleur de ba barre d'indication de la slide */
+		background-color: red;
+	}
+	.body-radio-liste .row {
+		width: 100%;
+	}
+	.body-radio-liste #page .row .col {
+		background: linear-gradient(black, 90%, red);
+		border: 2px solid red;
+		margin: 7px;
+		z-index: 3;
+		width: 100px;
+		padding-top: 1.5%;
+	}
+	
+	.body-radio-liste #page .row form>.col {
+		width: 100%;
+		-ms-flex-positive: 1;
+		-ms-flex-preferred-size: 0;
+	}
+	
+
+/* phone.php */
+.phoneOverlay .header,.darkmodebox {
+	border-color: #00ffff;
+}
+.phoneOverlay  header .darkmodebox {
+	border-color: #00ffff;
+}
+.phoneOverlay .footerPhone {
+	width: 101%;
+	height: 8.2%;
+	position: absolute; 
+	bottom: 0;
+}
+.phoneOverlay .footerPhone .row {
+	width: 100%;
+	height: 10%;
+}
+.phoneOverlay .footerPhone .row h1 {
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 3.5%;
+	font-size: 35px;
+}
+	/* compose.php */
+	#disposition >.col {
+		margin-top:10%; 
+	}
+	#pavnum {
+		width: 45%;
+		margin-top: 7%;
+	}
+	#pavnum .col-4 {
+		background-color: black;
+		border : 1px solid #00ffff;
+		text-align: center;
+		vertical-align: middle;
+		height: 30%; /* pas responsive */
+		width: 30%;
+		padding: 8%;
+	}
+	#pavnum .col-4:active {
+		background-color: #00ffff;
+	}
+	#pavnum .col-4 h1 {
+		font-size: 50px;
+	}
+	#pavnum #void {
+		border: none;
+	}
+	.action .row {
+		margin-top:10%; 
+	}
+	#disposition .action #zonesaisie {
+		border : 1px solid #00ffff;
+		height: 60px;
+		font-style: bold;
+		text-align: right;
+	}
+	#disposition .action .bouttonSupCall{
+		margin: 10px;
+		margin-top: 35%;
+		padding-top: 7%;
+		padding-bottom: 7%;
+	}
+	#disposition .action #supprimer {
+		border: 1px solid red;
+		background: linear-gradient(black, 90%, red);
+	}
+	#disposition .action #supprimer:active {
+		background: red;
+	}
+	#disposition .action #call {
+		border: 1px solid green;
+		background: linear-gradient(black, 90%, green);
+	}
+	#disposition .action #call:active {
+		background: green;
+	}
+	
+	
+
+/* nav.php */
+.msgprevention {
+	margin-top: 10%;
+	
+	text-align: center;
+}
+.msgprevention h1 {
+	color: red;
+	font-size: 60px;
+}
+.msgprevention p {
+	font-size: 40px;
+}
+.footerNav {
+	width: 101%;
+	height: 8.2%;
+	position: absolute; 
+	bottom: 0;
+}
+.footerNav .col {
+	text-align: center;
+}
+
+
+.navOverlay {
+	padding:0%;
+	height:100%;
+}
+.navOverlay .header {
+	border-bottom: 2px solid #00b200;
+}
+.navOverlay  header .darkmodebox {
+	border-color: #00b200;
+}
+.navOverlay .footerNav .row .col-auto {
+	background-color: black;
+}
+.navOverlay .footerNav .row h1 {
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 3.3%;
+	font-size: 35px;
+}
+.navOverlay .footerNav #destination{
+	border-top: 2px solid #00b200;
+	border-right: 2px solid #00b200;
+	width: 25%;
+	text-align: center;
+}
+.navOverlay .footerNav #mediaplayed {
+	border-top: 2px solid #00b200;
+	border-left: 2px solid #00b200;
+	width: 35%;
+	text-align: center;
+}
+	/* maps.php */
+	.map-responsive {
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+		z-index: 0;
+	}
+	.map-responsive iframe {
+		left:0;
+		top:0;
+		height:81%;
+		width:100%;
+		position:absolute;
+		z-index: 0;
+	}
+	

@@ -1,0 +1,5 @@
+	///!\\\ ERRORS LIST ///!\\\
+	{ for Android auto V: 0.2.7}
+____________________________________________
+
+-- ERREUR #1: Imposible de se connecter à la base de données 

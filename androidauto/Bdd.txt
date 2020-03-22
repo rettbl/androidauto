@@ -1,0 +1,38 @@
+		Schéma ralationnel 
+settings
+
+
+radio (id, name, frequence, selected)
+	clé primaire: id
+
+
+
+
+REQUETTES
+___________________________________________
+
+[création de la bdd]
+CREATE DATABASE androidauto
+
+[création de la table radio]
+CREATE TABLE radio (
+    id int NOT NULL,
+    name varchar(25) NUll,
+    frequence real NOT NULL,
+    selected tinyint(1) NULL,
+    PRIMARY KEY (id)
+    );
+
+	[insertion de données]
+	INSERT INTO radio VALUES (1,'Fun Radio', 102.8, 1);
+	INSERT INTO radio VALUES (2, 'Vibration', 101.7, 0);
+	INSERT INTO radio VALUES (3, 'NRJ', 87.7, 0);
+	INSERT INTO radio VALUES (4, 'Skyrock', 90.5, 0);
+	INSERT INTO radio VALUES (5, 'Nostalgie', 106.3, 0);
+	INSERT INTO radio VALUES (6, '107.7', 107.7, 0);
+	INSERT INTO radio VALUES (7, 'France Bleu', 105.0, 0);
+	INSERT INTO radio VALUES (8, 'RTL', 104.0, 0);
+	INSERT INTO radio VALUES (9, 'Cherie FM', 91.6, 0);
+	INSERT INTO radio VALUES (10, 'Le Mouv', 94.1, 0);
+	INSERT INTO radio VALUES (11, 'Radio Classique', 102.3, 0);
+	INSERT INTO radio VALUES (12, 'Virgin Radio', 96.1, 0)
