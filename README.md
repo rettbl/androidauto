@@ -16,8 +16,8 @@ Ce projet consiste à créer une app web de tableau de bord pour voiture (comme 
 ## Versions
 - [futur] __0.3.0:__ "Blue" ajout des api bluetooth sur l'app.
 - [futur] __0.2.8:__ 
-    * {confort} Création de la page confort.php pour tout ce qui est chauffage abitacle, niveau batterie vehicule et jsp quoi d'autre.
-    * ede
+    * {confort} Création de la page confort.php pour tout ce qui est chauffage abitacle, niveau batterie véhicule et jsp quoi d'autre.
+    * {header.php} La témpérature est maintenant gérer avec une API météo
 - __0.2.7:__ 
    * {radio} ajax pour le changement de station. 
    * {téléphone} ajax pour taper et afficher le numéro de téléphone.
