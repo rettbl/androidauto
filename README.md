@@ -14,11 +14,13 @@ Ce projet consiste à créer une app web de tableau de bord pour voiture (comme 
 - [ ] "MAIN": Faire l'intégration du RPI sur une voiture.
 
 ## Versions
-- [futur] 0.3.0: "Blue" ajout des api bluetooth sur l'app.
-- [futur] 0.2.8: 
+- [futur] __0.3.0:__ "Blue" ajout des api bluetooth sur l'app.
+- [futur] __0.2.8:__ 
     * {confort} Création de la page confort.php pour tout ce qui est chauffage abitacle, niveau batterie vehicule et jsp quoi d'autre.
     * ede
-- 0.2.7: - {radio} ajax pour le changement de station. - {téléphone} ajax pour taper et afficher le numéro de téléphone.
+- __0.2.7:__ 
+   * {radio} ajax pour le changement de station. 
+   * {téléphone} ajax pour taper et afficher le numéro de téléphone.
 
 
 ## Mise en production
